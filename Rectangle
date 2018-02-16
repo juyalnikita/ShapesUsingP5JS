@@ -1,0 +1,40 @@
+import processing.pdf.*;
+
+void setup() {
+ size(1000, 700);
+ background(50);
+ beginRecord(PDF, "Data Visualisation shapes.pdf");
+ rectMode(CENTER);
+ noStroke();
+ noLoop(); 
+}
+
+void draw() {
+ pushMatrix();
+ fill(200,100,100);
+ translate(width/2,height/2);
+ translate(-50,60);
+ rect(0,0,120,60);
+ popMatrix();
+
+
+
+
+ pushMatrix();
+ fill(250,150,0);
+ translate(width/2,height/2);
+ translate(200,60);
+ rotate(radians(120));
+ rect(0,0,120,60);
+ popMatrix();
+
+
+ pushMatrix();
+ fill(250,300,0);
+ translate(width/2,height/2);
+ translate(300,60);
+ rect(100,0,120,100);
+ popMatrix();
+
+
+}
