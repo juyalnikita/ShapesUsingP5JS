@@ -33,7 +33,7 @@ void draw() {
  fill(250,300,0);
  translate(width/2,height/2);
  translate(300,60);
- rect(100,0,120,100);
+ rect(100,0,120,100,10);
  popMatrix();
 
 
